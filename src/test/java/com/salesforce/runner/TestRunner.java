@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 import java.util.Objects;
 
 @CucumberOptions(features = "src/test/java/com/salesforce/features",glue="com.salesforce.stepdefinitions",
-        monochrome = true,dryRun = false,tags = "@SmokeTest or @ErrorValidation",
+        monochrome = true,dryRun = false,tags = "@Regression and @SanityTest",
         plugin = {"pretty","html:target/cucumber-reports.html","json:target/cucumber-json-reports.json",
         "rerun:target/failedTest.txt"}
 )

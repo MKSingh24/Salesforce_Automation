@@ -7,6 +7,7 @@ Feature: Test salesforce login feature
     And User click on login button
     Then User should be logged successfully
 
+
   @Regression @ErrorValidation
   Scenario: Verify whether error is displayed when invalid credentials are entered
     Given User open salesforce login url

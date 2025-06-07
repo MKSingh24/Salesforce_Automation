@@ -22,7 +22,8 @@ public class LoginPageSteps {
     public LoginPage loginPage;
     public TestContext testContext;
 
-    public LoginPageSteps(TestContext testContext) {
+    public LoginPageSteps(TestContext testContext)
+    {
         this.testContext = testContext;
     }
 
@@ -32,6 +33,9 @@ public class LoginPageSteps {
         String urlFromPropertyFile=ConfigReader.getProperty("url");
         String urlFromMaven=System.getProperty("url");
         String url=urlFromMaven!=null?urlFromMaven:urlFromPropertyFile;
+
+
+
 
       /*  testContext.driver=new ChromeDriver();
         testContext.driver.get("https://abc432-dev-ed.develop.my.salesforce.com/");

@@ -37,6 +37,7 @@ jobs:
       - name: Run Maven tests
         env:
           Salesforce_userName: ${{secrets.SALESFORCE_USERNAME}}
+          Salesforce_pass: ${{secrets.SALESFORCE_PASS}}
 
         run: mvn clean test -Dcucumber.filter.tags="@SmokeTest"
         continue-on-error: true

@@ -33,7 +33,7 @@ jobs:
 
 
       - name: Store test Results
-        uses: action/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: tests-results
           path: target/

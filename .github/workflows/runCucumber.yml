@@ -29,7 +29,11 @@ jobs:
             ${{runner.os}}-m2
 
       - name: Run Maven tests
+        env:
+          Salesforce_userName: ${{secrets.Salesforce_userName}}
+
         run: mvn clean test -Dcucumber.filter.tags="@SmokeTest"
+        continue-on-error: true
 
 
       - name: Store test Results

@@ -4,7 +4,9 @@ Feature: Opportunities creation
     When User enter valid credentials
     And User click on login button
     Then User should be logged successfully
+    And User choose "Sales" from App Launcher
 
+  @Opportunities
   Scenario: Creation of Opportunities in salesforce
     Given User click on "Opportunities" tab
     When  User click on new button in Opportunities tab

@@ -1,4 +1,4 @@
-Feature: Contacts creation
+Feature: Case creation
   Background:
     Given User open salesforce login url
     When User enter valid credentials
@@ -6,9 +6,9 @@ Feature: Contacts creation
     Then User should be logged successfully
     And User choose "Sales" from App Launcher
 
-   @Contacts
+  @Cases
   Scenario: Creation of contact in salesforce
-    Given User click on "Contacts" tab
-    When  User click on new button in Contacts tab
-    Then  User creates new contact by populating mandatory fields
-    And   User click on save button in "Contacts" tab
+    Given User click on "Cases" tab
+    When  User click on new button in Cases tab
+    Then  User creates new case by populating mandatory fields
+    And   User click on save button in "Cases" tab
